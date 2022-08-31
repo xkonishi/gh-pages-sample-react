@@ -38,6 +38,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build && xcopy build docs /E /Y",
+    "http": "http-server docs -o -p 8088",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -58,5 +59,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
   }
 }
